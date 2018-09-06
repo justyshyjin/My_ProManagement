@@ -1,7 +1,7 @@
 /* My stylesheet */
 
 body{
-    width: 100%;
+    width: 98%;
     float: left;
 }
 
@@ -30,16 +30,46 @@ header section{
     width: 50%;
     text-align: center;
 }
+.proTitle{
+    padding: 4%;
+}
+.profileCont{
+    float: left;
+    padding: 5%;
+}
 .profile{
     width: 30%
 }
 .profileImage{
     float: left;
-    height: 50%;
-    width: 17%;
+    height: 50px;
+    width: 50px;
     background-image: url('../images/profile.png');
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 30px;
     border: 2px solid #d1f6ba;
+}
+.profName{
+    padding-top: 10%;
+    margin-left: 5px;
+}
+
+/*screen below 600px*/
+
+@media only screen and (max-width: 680px) {
+    body{
+        width: 97%;
+    }
+
+    .profileImage{
+        float:none;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profName{
+        font-size: 12px;
+    }
 }
